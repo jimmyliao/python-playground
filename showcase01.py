@@ -22,3 +22,6 @@ print(f"count of axis-0: {df.shape[0]}")
 
 # count of Y axis
 print(f"count of axis-1: {df.shape[1]}")
+
+# Size of dataframe
+print(f"Size: {df.size}")
