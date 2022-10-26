@@ -24,4 +24,15 @@ print(f"count of axis-0: {df.shape[0]}")
 print(f"count of axis-1: {df.shape[1]}")
 
 # Size of dataframe
-print(f"Size: {df.size}")
+print(f"size of dataframe: {df.size}")
+
+import sys
+# print(f"size of dataframe (in bytes): {sys.getsizeof(df)}")
+
+# print(df.memory_usage(deep=True))
+# print(f"size of all: {df.memory_usage()}")
+print(df.memory_usage(deep=True).sum())
+
+print(f"size of row-0 (bytes)): {df.iloc[0].memory_usage(deep=True)}")
+print(f"size of row-1 (bytes)): {df.iloc[1].memory_usage(deep=True)}")
+print(f"size of row-2 (bytes)): {df.iloc[2].memory_usage(deep=True)}")
